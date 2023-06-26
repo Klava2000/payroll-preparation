@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет зарплаты💰</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h1>Расчет зарплаты за один рабочий день для грумеров</h1>
+            <p>Доход салона за день</p>
+            <input id="income" type="text" placeholder="-50% в салон"> 
+            <p>Сколько грумеров работает в смену</p>
+            <input id="people" type="text" placeholder="Сколько человек">
+            <p>Чаевые</p>
+            <input id="tip" type="text" placeholder="Чаевые">
+            <button id="btn">Расчитать</button>
+        </form>
+        <div id="payroll">
+            <div id="salary">
+                <p>Зарплата</p>
+                <span id="dividedSalary"></span>
+                <span>одного грумера</span>
+            </div>
+            <div id="totalTip">
+                <p>Чаевые</p>
+                <span id="dividedTip"></span>
+                <span>одного грумера</span>
+            </div>
+            <div id="totalSalary">
+                <p>Общая зарплата</p>
+                <span id="salaryAndTip"></span>
+                <span>одного грумера</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
